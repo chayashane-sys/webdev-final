@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scratch Page – My Hobby</title>
+  <!-- This connects your HTML to your CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="top">
+  <div class="header-container">
+    <h1>My Hobby: Exploring the Outdoors</h1>
+    <nav class="main-nav">
+      <a href="index.html">🏠 Professional Site</a>
+      <a href="#video-section">🎥 Favorite Video</a>
+      <a href="#tableau-section">📊 Tableau Viz</a>
+      <a href="app.html">🧩 Web App</a>
+    </nav>
+  </div>
+</header>
+<main class="content-container">
+  <div class="column main-column">
+<div class="column main-column">
+  <section class="section-box">
+    <h2>Why I Love the Outdoors</h2>
+    <p>
+      Spending time outside helps me reset, clear my mind, and feel grateful.
+      Whether I'm hiking, walking around campus, or just watching a sunset, being
+      outdoors reminds me to slow down and breathe.
+    </p>
+  </section>
+
+  <section class="section-box">
+    <h2>My Top Outdoor Activities</h2>
+    <!-- Ordered list with nested unordered list -->
+    <ol>
+      <li>
+        Hiking
+        <ul>
+          <li>Short after-class hikes</li>
+          <li>Weekend mountain trails</li>
+          <li>Sunrise and sunset hikes</li>
+        </ul>
+      </li>
+      <li>
+        Scenic Walks
+        <ul>
+          <li>Walks with friends</li>
+          <li>Listening to podcasts</li>
+          <li>Calling family while walking</li>
+        </ul>
+      </li>
+      <li>
+        Relaxing at Parks
+        <ul>
+          <li>Picnics</li>
+          <li>Reading outside</li>
+          <li>People-watching</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+
+  <section class="section-box" id="video-section">
+    <h2>Favorite Outdoors Video</h2>
+    <p>Here’s a video that captures some of the peaceful outdoor moments I love:</p>
+
+    <div class="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/watch?v=q2_c2_WfJFg"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <p class="back-to-top"><a href="#top">Back to top ↑</a></p>
+  </section>
+</div>
+  </div>
+  <aside class="column sidebar">
+<aside class="column sidebar">
+  <section class="section-box">
+    <h2>Outdoor Snapshot</h2>
+    <img src="images/hobby1.jpg" alt="Me enjoying the outdoors" class="outdoor-image">
+    <p class="image-caption">
+      One of my favorite spots to pause and be present.
+    </p>
+  </section>
+
+  <section class="section-box" id="tableau-section">
+    <h2>Interactive Tableau Graph</h2>
+    <p>
+      This Tableau visualization shows some data I find interesting.
+      (It will be interactive on the hosted site.)
+    </p>
+
+    <!-- Tableau embed goes here -->
+    <div class='tableauPlaceholder' id='viz1765758888491' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;De&#47;De-stressintheGreatOutdoors&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='De-stressintheGreatOutdoors&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;De&#47;De-stressintheGreatOutdoors&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1765758888491');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='927px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='800px';vizElement.style.height='927px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+  </section>
+</aside>
+  </aside>
+</main>
+
+<footer class="footer">
+  <p>Scratch page for Web Dev Final · <a href="index.html">Back to Professional Site</a></p>
+</footer>
+</body>
+</html>

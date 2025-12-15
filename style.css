@@ -1,0 +1,127 @@
+/* Global typography and background */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #1f2933; /* font color */
+  background: linear-gradient(135deg, #e0f2ff, #fdfbff); /* custom background */
+}
+
+/* Header */
+.header-container {
+  padding: 1.5rem 2rem;
+  background-color: #0b7285; /* teal */
+  color: white;
+}
+
+.header-container h1 {
+  margin: 0 0 0.5rem 0;
+}
+
+/* Navigation */
+.main-nav a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #e3f8ff;
+  font-weight: 500;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Layout: three important divs */
+.content-container {
+  display: flex;      /* positioning div #1 */
+  gap: 1.5rem;
+  padding: 1.5rem 2rem;
+  box-sizing: border-box;
+}
+
+.column {
+  box-sizing: border-box;
+}
+
+.main-column {
+  flex: 2;            /* positioning div #2 */
+}
+
+.sidebar {
+  flex: 1;
+}
+
+/* Section boxes */
+.section-box {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.08);
+}
+
+/* Lists */
+ol {
+  padding-left: 1.25rem;
+}
+
+ul {
+  padding-left: 1.25rem;
+  margin-top: 0.25rem;
+}
+
+/* Image styles */
+.outdoor-image {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.image-caption {
+  font-size: 0.9rem;
+  color: #52606d;
+}
+
+/* Video wrapper */
+.video-wrapper {
+  position: relative;       /* positioning div #3 */
+  padding-bottom: 56.25%;   /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 0.75rem;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Tableau placeholder */
+.tableau-placeholder {
+  border: 2px dashed #9fb3c8;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  background-color: #f8fafc;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #0b7285;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #e3f8ff;
+}
+
+/* Back-to-top link */
+.back-to-top a {
+  font-size: 0.9rem;
+}
