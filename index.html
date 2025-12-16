@@ -2,24 +2,134 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Professional Site</title>
+  <title>Chaya Shane · Professional Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google Font (Serif, elegant) -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
   <!-- Bootstrap CSS via CDN -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     rel="stylesheet"
   >
+
+  <style>
+    /* 🌸 Soft Pink Feminine Aesthetic Theme 🌸 */
+
+    body {
+      background-color: #fff8fb;
+      font-family: 'Playfair Display', serif;
+      color: #4a4a4a;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background: linear-gradient(90deg, #f9c5d1, #f7b3c2) !important;
+    }
+
+    .navbar .navbar-brand,
+    .navbar .nav-link {
+      color: white !important;
+      font-weight: 500;
+      font-size: 1.05rem;
+    }
+
+    .navbar .nav-link:hover {
+      color: #ffe8f3 !important;
+    }
+
+    /* HEADER / HERO SECTION */
+    header {
+      background: linear-gradient(135deg, #ffe8f3, #f9c5d1, #fce7ef);
+      color: #5a264a;
+    }
+
+    header h1 {
+      font-weight: 600;
+    }
+
+    .hero-subtitle {
+      max-width: 650px;
+      color: #6b4155;
+      font-size: 1.05rem;
+    }
+
+    /* TAG PILLS */
+    .tag-pill {
+      display: inline-block;
+      padding: 0.3rem 0.9rem;
+      border-radius: 999px;
+      background-color: #fce7ef;
+      color: #d96a8d;
+      font-size: 0.85rem;
+      margin-right: 0.35rem;
+      margin-bottom: 0.35rem;
+      border: 1px solid #f7b3c2;
+    }
+
+    /* SECTION TITLES */
+    h2 {
+      color: #d96a8d;
+      font-weight: 600;
+    }
+
+    /* ABOUT SECTION TEXT */
+    #about p {
+      color: #6b4a57;
+      font-size: 1.05rem;
+    }
+
+    /* RESUME CARDS – COLORFUL & FEMININE */
+    .card {
+      border-radius: 16px;
+      border: none;
+      padding: 1rem;
+      background: linear-gradient(145deg, #ffe8f3, #fce7ef);
+      box-shadow: 0 8px 20px rgba(217, 106, 141, 0.15);
+      margin-bottom: 1.5rem;
+      color: #5b2a41;
+    }
+
+    .card h4 {
+      color: #d96a8d;
+      font-weight: 600;
+    }
+
+    .card ul {
+      padding-left: 1.25rem;
+      margin-bottom: 0;
+    }
+
+    .card ul li {
+      margin-bottom: 0.4rem;
+    }
+
+    /* FOOTER */
+    footer {
+      background: linear-gradient(90deg, #f7b3c2, #f9c5d1);
+      color: white;
+      font-size: 0.95rem;
+    }
+  </style>
 </head>
+
 <body>
 
   <!-- Navigation bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-      <a class="navbar-brand" href="#">Chaya Shane</a>
+      <a class="navbar-brand fw-semibold" href="#">Chaya Shane</a>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#resume">Résumé</a>
           </li>
@@ -34,66 +144,137 @@
     </div>
   </nav>
 
-  <!-- Hero header -->
-  <header class="py-5 bg-light">
+  <!-- Hero Header -->
+  <header class="py-5">
     <div class="container">
-      <h1 class="display-5 fw-bold">Hi, I'm Chaya Shane</h1>
-      <p class="lead">
-        Aspiring lawyer and poet with experience in pharmacy, writing and athletic training.
-      </p>
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h1 class="display-5 fw-bold mb-3">Hi, I'm Chaya Shane</h1>
+          <p class="hero-subtitle">
+            Aspiring lawyer and poet with experience in pharmacy, writing, and athletic training.
+            I love combining analytical thinking with empathy—whether I’m helping patients,
+            mentoring athletes, or crafting words on a page.
+          </p>
+
+          <div class="mt-3">
+            <span class="tag-pill">Pre-Business · BYU</span>
+            <span class="tag-pill">Certified Pharmacy Tech</span>
+            <span class="tag-pill">Athletic Trainer Intern</span>
+            <span class="tag-pill">Spanish Speaker</span>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 
-  <!-- Résumé section -->
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">About Me</h2>
+      <p>
+        I’m a Pre-Business student at Brigham Young University with interests that stretch across
+        law, healthcare, mental health, and creative writing. I enjoy environments where I can
+        support other people—whether that’s answering pharmacy questions, helping athletes train
+        safely and confidently, or expressing ideas through poetry and essays.
+      </p>
+      <p>
+        Long term, I hope to work in a role where I can advocate for others, think critically
+        about complex problems, and still keep a very human perspective at the center of my work.
+      </p>
+    </div>
+  </section>
+
+  <!-- Résumé Section -->
   <section id="resume" class="py-5">
     <div class="container">
       <h2 class="mb-4">Résumé</h2>
 
-      <h3>Education</h3>
-      <ul>
-        <li>
-          Brigham Young University – Pre Business, Expected Graduation: 2027<br>
-          Relevant coursework: Information Systems, Accounting, Psychology
-        </li>
-      </ul>
+      <!-- Education -->
+      <div class="mb-4">
+        <h3 class="h5">Education</h3>
+        <ul class="mb-1">
+          <li>
+            <strong>Brigham Young University</strong> — Pre-Business<br>
+            Expected Graduation: <strong>2027</strong><br>
+            Relevant coursework: Information Systems, Accounting, Psychology
+          </li>
+        </ul>
+      </div>
 
-      <h3>Experience</h3>
-      <ul>
-        <li>
-          Certified Pharmacy Technician – Harmons (05/01/2024 – Present)<br>
-         Deliver friendly customer service at prescription drop-off and pick-up counters
-         Collaborate with doctors and customers both in-person and via phone
-         Manage patient payments and invoiced major insurance providers
-        </li>
-        <li>
-          Athletic Trainer Intern – Optimum Performance Zone (08/2020 – Present)<br>
-          Assess athletes and their abilities in order to assist with creating a personalized training program
-          Demonstrate proper form and mentor teenage athletes through strength and mental health training
-          Complete administrative duties of entering assessment data and compiling student progress reports
-        </li>
-      </ul>
+      <!-- Experience -->
+      <div class="mb-4">
+        <h3 class="h5">Experience</h3>
 
-      <h3>Skills</h3>
-      <ul>
-        <li>Technical: HTML, CSS, basic JavaScript, Excel, Tableau</li>
-        <li>Professional: teamwork, communication, problem-solving</li>
-      </ul>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="h6 mb-1">Certified Pharmacy Technician</h4>
+            <p class="mb-1"><strong>Harmons</strong> · May 2024 – Present</p>
+            <ul class="mb-0">
+              <li>Deliver friendly customer service at prescription drop-off and pick-up counters.</li>
+              <li>Collaborate with doctors and customers both in-person and over the phone.</li>
+              <li>Manage patient payments and work with major insurance providers.</li>
+            </ul>
+          </div>
+        </div>
 
-      <h3>Awards & Honors</h3>
-      <ul>
-        <li>Fluent Spanish Speaker, Member National Honors Society, Premier Soccer Player</li>
-      </ul>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="h6 mb-1">Athletic Trainer Intern</h4>
+            <p class="mb-1"><strong>Optimum Performance Zone</strong> · Aug 2020 – Present</p>
+            <ul class="mb-0">
+              <li>Assess athletes to help build personalized training programs.</li>
+              <li>Demonstrate proper form and mentor teenage athletes in strength and mental health.</li>
+              <li>Complete administrative work, including data entry and progress reports.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="mb-4">
+        <h3 class="h5">Skills</h3>
+        <div class="row">
+          <div class="col-md-6">
+            <h4 class="h6">Technical</h4>
+            <ul>
+              <li>HTML, CSS, basic JavaScript</li>
+              <li>Excel, Tableau</li>
+              <li>Data entry & documentation</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h4 class="h6">Professional</h4>
+            <ul>
+              <li>Teamwork & collaboration</li>
+              <li>Customer communication</li>
+              <li>Problem-solving and adaptability</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Awards & Honors -->
+      <div class="mb-4">
+        <h3 class="h5">Awards & Honors</h3>
+        <ul>
+          <li>Spanish speaker</li>
+          <li>Member, National Honor Society</li>
+          <li>Premier-level competitive soccer player</li>
+        </ul>
+      </div>
+
     </div>
   </section>
 
-  <!-- Optional footer -->
-  <footer class="py-3 bg-dark text-light">
+  <!-- Footer -->
+  <footer class="py-3">
     <div class="container text-center">
       <small>© 2025 Chaya Shane · Professional Site</small>
     </div>
   </footer>
 
-  <!-- Bootstrap JS via CDN -->
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
